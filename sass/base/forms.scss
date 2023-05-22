@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+# FORMS
+--------------------------------------------------------------*/
+
+.gform_wrapper.gravity-theme form {
+	label {
+		@extend %p;
+		font-weight: 700;
+		display: block;
+		margin-bottom: _rem(11);
+	}
+	input[type=text],
+	input[type=number],
+	input[type=email],
+	input[type=phone],
+	input[type=tel],
+	input:not([type=submit]),
+	textarea,
+	select {
+        @extend %p_md;
+		width: 100%;
+		margin-bottom: _rem(30);
+		height: _rem(74);
+		padding-left: _rem(19);
+		background: transparent;
+		border-radius: 0;
+		box-sizing: border-box;
+		border: _rem(1) solid $black;
+		color: $black;
+		-webkit-appearance: none;
+        &::placeholder {
+            color: $black;
+        }
+	}
+	textarea {
+	    padding-top: _rem(12);
+	    height: _rem(200);
+	}
+	input[type="submit"] {
+		@extend %btn-solid;
+	}
+	.validation_message,
+	.validation_error {
+		color: #c5420f;
+	}
+	.gform_ajax_spinner {
+		position: absolute;
+		top: _rem(75);
+		right: calc(50% - 11px);
+		height: _rem(22);
+		width: _rem(22);
+	}
+    .gform_fields {
+        grid-column-gap: _rem(30);
+        grid-row-gap: _rem(30);
+    }
+}

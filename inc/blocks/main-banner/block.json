@@ -1,0 +1,14 @@
+{
+  "name": "acf/main-banner",
+  "title": "Main Banner",
+  "description": "A custom block for main banner.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["banner"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/main-banner/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}

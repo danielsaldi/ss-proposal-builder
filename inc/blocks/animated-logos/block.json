@@ -1,0 +1,14 @@
+{
+  "name": "acf/animated-logos",
+  "title": "Animated Logos",
+  "description": "A custom block with one or two rows of animated logos.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["logos", "animation"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/animated-logos/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}

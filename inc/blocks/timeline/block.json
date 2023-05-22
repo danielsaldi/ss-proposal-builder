@@ -1,0 +1,14 @@
+{
+  "name": "acf/timeline",
+  "title": "Timeline",
+  "description": "A custom block with project timeline.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["timeline"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/timeline/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}

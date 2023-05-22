@@ -1,0 +1,33 @@
+.error-404 {
+    &__content {
+        padding: 20vh 0;
+        color: $yellow;
+        h1 {
+            @extend %h_1;
+            
+        }
+        h3 {
+            @extend %p_lg;
+        }
+        .btn {
+            color: $yellow;
+            display: table;
+            margin-top: _rem(60);
+        }
+    }
+}
+
+.error404 {
+    #SS-logo {
+        fill: $yellow;
+    }
+    .header__links,
+    .footer__main,
+    .footer__legal__link {
+        display: none;
+    }
+    .footer__legal {
+        border-top: none;
+        padding-top: _rem(40);
+    }
+}

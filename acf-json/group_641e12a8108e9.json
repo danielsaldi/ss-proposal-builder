@@ -1,0 +1,103 @@
+{
+    "key": "group_641e12a8108e9",
+    "title": "Partial - Heading",
+    "fields": [
+        {
+            "key": "field_641e12a8f760d",
+            "label": "Heading Text",
+            "name": "heading_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_641e12c6f760e",
+            "label": "Heading HTML",
+            "name": "heading_html",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "h1": "<h1>",
+                "h2": "<h2>",
+                "h3": "<h3>",
+                "h4": "<h4>",
+                "h5": "<h5>",
+                "h6": "<h6>"
+            },
+            "default_value": "h2",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_641e1373f760f",
+            "label": "Heading Style",
+            "name": "heading_style",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "h_1": "Heading 1",
+                "h_2": "Heading 2",
+                "h_3": "Heading 3",
+                "h_4": "Heading 4"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1682975106
+}

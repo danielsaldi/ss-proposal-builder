@@ -1,0 +1,12 @@
+/*--------------------------------------------------------------
+# FONTS
+--------------------------------------------------------------*/
+@import url("https://use.typekit.net/pev0gwy.css");
+
+@font-face {
+    font-family: "Matter";
+    src: url("../assets/fonts/Matter-Regular.otf") format("opentype"), url("../assets/fonts/Matter-Regular.ttf")  format("truetype");
+}
+
+$matter: 'Matter', sans-serif;
+$aktiv: aktiv-grotesk-extended, sans-serif;

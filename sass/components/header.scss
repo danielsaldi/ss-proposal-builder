@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: _rem(43);
+    color: $yellow;
+    margin-top: _rem(43);
+    padding: _rem(27) 0;
+    border-top: _rem(1) solid $yellow;
+    background-color: $black;
+    svg {
+        fill: $gray_light;
+        width: 100%;
+    }
+    &__logo {
+        margin-right: auto;
+        svg {
+            max-width: _rem(113);
+        }
+    }
+    &__links {
+        a {
+            @extend %btn;
+            @extend %btn--sm;
+            white-space: nowrap;
+            font-size: _rem(18);
+            @media only screen and (min-width: 768px) {
+                font-size: _rem(22);
+            }
+        }
+    }
+}

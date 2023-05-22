@@ -1,0 +1,14 @@
+{
+  "name": "acf/two-col-text",
+  "title": "Two Col Text",
+  "description": "A custom block that displays two columns.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["columns", "text"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/two-col-text/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}

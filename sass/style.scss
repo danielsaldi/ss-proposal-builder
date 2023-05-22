@@ -1,0 +1,62 @@
+/*!
+Theme Name: Studio Science
+Theme URI: https://www.studioscience.com/
+Author: Studio Science
+Author URI: https://www.studioscience.com/
+Description: Description
+Version: 1.0.0
+Text Domain: studioscience
+
+*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "base/normalize";
+
+/*--------------------------------------------------------------
+# Vendors
+--------------------------------------------------------------*/
+@import "vendors/slick-slider";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/typography";
+@import "base/buttons";
+@import "base/global";
+@import "base/forms";
+@import "base/grid";
+@import "base/animations";
+@import "base/modal";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+@import "components/header";
+@import "components/footer";
+@import "components/posts";
+@import "components/our-team";
+@import "components/error-404";
+
+/*--------------------------------------------------------------
+# Blocks
+--------------------------------------------------------------*/
+
+@import "../inc/blocks/text-editor/style";
+@import "../inc/blocks/main-banner/style";
+@import "../inc/blocks/two-col-text/style";
+@import "../inc/blocks/links-list/style";
+@import "../inc/blocks/secondary-banner/style";
+@import "../inc/blocks/animated-logos/style";
+@import "../inc/blocks/divider/style";
+@import "../inc/blocks/two-col-list/style";
+@import "../inc/blocks/team/style";
+@import "../inc/blocks/timeline/style";
+@import "../inc/blocks/testimonials/style";
+

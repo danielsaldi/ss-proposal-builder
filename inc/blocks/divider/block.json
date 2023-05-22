@@ -1,0 +1,14 @@
+{
+  "name": "acf/divider",
+  "title": "Divider",
+  "description": "A custom block line divider.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["divider"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/divider/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}

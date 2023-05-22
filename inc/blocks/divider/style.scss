@@ -1,0 +1,12 @@
+.divider {
+    &__line {
+        display: block;
+        width: 100%;
+        height: _rem(1);
+        background-color: $white;
+    }
+    &__text {
+        padding-top: _rem(20);
+        @extend %h_3;
+    }
+}

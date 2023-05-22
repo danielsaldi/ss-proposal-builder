@@ -1,0 +1,23 @@
+.secondary-banner {
+    width: 100%;
+    color: $yellow;
+    padding: _rem(140) 0 _rem(70);
+    .container {
+        @media only screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+    &__tagline {
+        margin-bottom: _rem(90); 
+    }
+    &__heading {
+        margin-top: _rem(30)
+    }
+    &__image {
+        margin: _rem(40) 0 0 0;
+        @media only screen and (min-width: 768px) {
+            margin: auto 0 0 auto;
+            flex-shrink: 0;
+        }
+    }
+}

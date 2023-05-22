@@ -1,0 +1,17 @@
+.two-col-list {
+    color: $white;
+    &__heading {
+        margin-bottom: _rem(40);
+    }
+    &__item {
+        border-top: _rem(1) solid $white;
+        padding: _rem(50) 0 _rem(75);
+        .h_1, .h_2, .h_3 {
+            margin-bottom: _rem(20);
+        }
+        .btn {
+            margin-top: _rem(45);
+            color: $yellow;
+        }
+    }
+}

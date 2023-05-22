@@ -1,0 +1,14 @@
+{
+  "name": "acf/text-editor",
+  "title": "Text Editor",
+  "description": "A custom block with standard text editor.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["banner"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/text-editor/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}

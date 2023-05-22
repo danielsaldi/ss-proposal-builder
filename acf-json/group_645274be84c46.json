@@ -1,0 +1,76 @@
+{
+    "key": "group_645274be84c46",
+    "title": "Block - Testimonial",
+    "fields": [
+        {
+            "key": "field_645274be8ed49",
+            "label": "Testimonials",
+            "name": "testimonials",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "testimonial"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "id",
+            "min": "",
+            "max": "",
+            "elements": ""
+        },
+        {
+            "key": "field_645274be8ee1b",
+            "label": "Module Settings",
+            "name": "module_settings",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5c89ee8639e94"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/testimonials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1683125614
+}

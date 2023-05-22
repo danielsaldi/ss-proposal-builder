@@ -1,0 +1,118 @@
+.timeline {
+    color: $white;
+    padding: _rem(115) 0 _rem(65);
+    &__count {
+        display: none;
+    }
+    &__slider {
+        margin-bottom: _rem(90);
+        @media only screen and (min-width: 768px) {
+            margin-bottom: _rem(125);
+        }
+        &__item {
+
+        }
+        &__title {
+            @extend %h_5;
+            color: $yellow;
+            margin-bottom: _rem(20);
+        }
+        &__description {
+            @extend %p_lg;
+        }
+        &__prev {
+            font-size: 0;
+            display: inline-block;
+            cursor: pointer;
+            transition: opacity 200ms ease-in-out;
+            &:after {
+                content: "➝";
+                font-size: _rem(48);
+                transform: rotate(180deg);
+                color: $yellow;
+                display: inline-block;
+                transition: all 200ms ease-in-out;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        &__next {
+            font-size: 0;
+            display: inline-block;
+            margin-left: _rem(40);
+            cursor: pointer;
+            transition: opacity 200ms ease-in-out;
+            &:after {
+                content: "➝";
+                font-size: _rem(48);
+                color: $yellow;
+                display: inline-block;
+                transition: all 200ms ease-in-out;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    &__navigation {
+        &__item {
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: _rem(1);
+                height: 100%;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                background-color: $white;
+                z-index: 2;
+            }
+        }
+        &__box {
+            display: block;
+            width: 100%;
+            background-color: $gray;
+            margin-top: _rem(40);
+            height: _rem(130);
+            transition: all 300ms ease-in-out;
+            @media only screen and (min-width: 768px) {
+                height: _rem(190);
+            }
+            @media only screen and (min-width: 992px) {
+                height: _rem(290);
+            }
+            cursor: pointer;
+            &:hover {
+                background-color: $yellow;
+            }
+        }
+        &__overlap {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 100%;
+            width: 0;
+            height: 100%;
+            background: repeating-linear-gradient(45deg, $black 0px, $black 6px, transparent 6px, transparent 12px);
+            z-index: 1;
+        }
+        .slick-track {
+            position: static;
+            transform: translate3d(0, 0, 0)!important;
+        }
+        .slick-current {
+            .timeline__navigation__box {
+                background-color: $yellow;
+            }
+            .timeline__navigation__overlap {
+                background: repeating-linear-gradient(45deg, $yellow 0px, $yellow 6px, transparent 6px, transparent 12px);
+            }
+        }
+    }
+    &__weeks {
+        @extend %h_3;
+        margin-top: _rem(30);
+    }
+}

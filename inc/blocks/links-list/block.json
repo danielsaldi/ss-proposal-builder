@@ -1,0 +1,14 @@
+{
+  "name": "acf/links-list",
+  "title": "Links List",
+  "description": "A custom block with the option of adding a list of links.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["links", "menu", "navigation"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/links-list/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}

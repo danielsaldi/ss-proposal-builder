@@ -1,0 +1,40 @@
+.links-list {
+    padding: _rem(130) 0 _rem(52);
+    color: $white;
+    &__list {
+        margin-top: _rem(43);
+        &__item {
+            padding: _rem(26) 0 _rem(14);
+            border-bottom: _rem(1) solid $white;
+            display: block;
+            &__link {
+                a {
+                    @extend .h_2;
+                    &.arrow {
+                        span {
+                            padding-right: _rem(40);
+                        }
+                        &:after {
+                            content: "➝";
+                            display: inline-block;
+                            margin-left: _rem(-30);
+                            transition: all 200ms ease-in-out;
+                        }
+                        &:hover,
+                        &:focus {
+                            &:after {
+                                transform: translateX(6px);
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            &__text {
+                max-width: _rem(900);
+                padding: _rem(26) 0 _rem(20);
+                @extend %p;
+            }
+        }
+    }
+}

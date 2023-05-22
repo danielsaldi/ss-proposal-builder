@@ -1,0 +1,38 @@
+.main-banner {
+    width: 100%;
+    overflow: hidden;
+    height: _rem(400);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: _rem(70);
+    @media only screen and (min-width: 768px) {
+        height: _rem(575);
+    }
+    .container {
+        height: 100%;
+    }
+    &__video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    &__content {
+        display: flex;
+        z-index: 1;
+        color: $yellow;
+        height: 100%;
+        &__text {
+            margin-top: auto;
+        }
+        .h_3 {
+            margin-bottom: _rem(12);
+        }
+    }
+}

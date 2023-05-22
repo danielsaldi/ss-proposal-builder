@@ -1,0 +1,163 @@
+/*--------------------------------------------------------------
+# TYPOGRAPHY
+--------------------------------------------------------------*/
+
+body {
+    font-family: $matter;
+}
+
+// HEADLINES
+
+%h_1, .h_1 {
+	font-family: $aktiv;
+    font-weight: 800;
+    font-size: _rem(35);
+    line-height: 91%;
+	letter-spacing: -0.03em;
+    text-transform: uppercase;
+	margin: 0;
+	@media only screen and (min-width: 600px) {
+		font-size: _rem(40);
+	}
+	@media only screen and (min-width: 768px) {
+		font-size: _rem(47);
+	}
+	@media only screen and (min-width: 992px) {
+		font-size: _rem(57);
+	}
+}
+
+%h_2, .h_2 {
+	font-family: $aktiv;
+    font-weight: 400;
+    font-size: _rem(28);
+    line-height: 115%;
+	letter-spacing: -0.03em;
+	margin: 0;
+	@media only screen and (min-width: 768px) {
+		font-size: _rem(64);
+	}
+}
+
+%h_3, .h_3 {
+	font-family: $aktiv;
+    font-weight: 500;
+    font-size: _rem(16);
+    line-height: 130%;
+	margin: 0;
+	@media only screen and (min-width: 768px) {
+		font-size: _rem(20);
+	}
+}
+
+%h_4, .h_4 {
+	font-family: $aktiv;
+    font-weight: 400;
+    font-size: _rem(24);
+	letter-spacing: -0.03em;
+    line-height: 164%;
+	margin: 0;
+	@media only screen and (min-width: 768px) {
+		font-size: _rem(44);
+	}
+}
+
+%h_5, .h_5 {
+	font-family: $aktiv;
+    font-weight: 400;
+    font-size: _rem(20);
+	letter-spacing: -0.03em;
+    line-height: 115%;
+	margin: 0;
+	@media only screen and (min-width: 768px) {
+		font-size: _rem(36);
+	}
+}
+
+.heading-stroke {
+    -webkit-text-fill-color: rgba($yellow, 0.35);
+    -webkit-text-stroke-width: _rem(2);
+    -webkit-text-stroke-color: $yellow;
+}
+
+%h_loader, .h_loader {
+	font-family: $aktiv;
+    font-weight: 800;
+    font-size: _rem(50);
+    line-height: 91%;
+	letter-spacing: -0.03em;
+    text-transform: uppercase;
+	margin: 0;
+	@media only screen and (min-width: 600px) {
+		font-size: _rem(56);
+	}
+	@media only screen and (min-width: 768px) {
+		font-size: _rem(70);
+	}
+	@media only screen and (min-width: 992px) {
+		font-size: _rem(87);
+	}
+}
+
+// PARAGRAPH
+
+%p, .p, p {
+	font-family: $matter;
+    font-weight: 400;
+	font-size: _rem(18);
+	line-height: 150%;
+	margin: 0 0 _rem(20) 0;
+	@media only screen and (min-width: 768px) {
+        font-size: _rem(24);
+	}
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+%p_sm, .p_sm {
+	font-family: $matter;
+    font-weight: 400;
+	font-size: _rem(16);
+	line-height: 130%;
+	margin: 0 0 _rem(30) 0;
+	@media only screen and (min-width: 768px) {
+		font-size: _rem(22);
+	}
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+%p_md, .p_md {
+	font-family: $matter;
+    font-weight: 400;
+	font-size: _rem(20);
+	line-height: 130%;
+	margin: 0 0 _rem(30) 0;
+	@media only screen and (min-width: 768px) {
+		font-size: _rem(28);
+	}
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+%p_lg, .p_lg {
+	font-family: $matter;
+    font-weight: 400;
+	font-size: _rem(24);
+	line-height: 130%;
+	margin: 0 0 _rem(40) 0;
+	@media only screen and (min-width: 768px) {
+		font-size: _rem(36);
+	}
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+

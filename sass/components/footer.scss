@@ -1,0 +1,37 @@
+.footer {
+    background: $yellow;
+    &__main {
+        padding: _rem(120) 0 _rem(430);
+        &__link {
+            a {
+                @extend %btn;
+                @extend %btn--lg;
+            }
+        }
+    }
+    &__legal {
+        border-top: $black _rem(1) solid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: _rem(40);
+        padding-top: _rem(8);
+        align-items: center;
+        &__text {
+            margin: _rem(16) 0;
+        }
+        &__text,
+        &__link {
+            font-size: _rem(18);
+	        line-height: 130%;
+            @media only screen and (min-width: 768px) {
+                font-size: _rem(22);
+            }
+        }
+        &__link {
+            @extend %btn;
+            @extend %btn--sm;
+            white-space: nowrap;
+        }
+    }
+}

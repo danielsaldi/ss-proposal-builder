@@ -1,0 +1,14 @@
+{
+  "name": "acf/team",
+  "title": "Team",
+  "description": "A custom block that displays team members.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["team"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/team/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}

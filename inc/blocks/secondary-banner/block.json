@@ -1,0 +1,14 @@
+{
+  "name": "acf/secondary-banner",
+  "title": "Secondary Banner",
+  "description": "A custom block for secondary banner.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["banner"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/secondary-banner/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}

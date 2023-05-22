@@ -1,0 +1,79 @@
+.testimonials {
+    background-color: $white;
+    padding: _rem(50) 0;
+    &__slider {
+        padding: _rem(40) 0 _rem(50);
+        border-bottom: _rem(1) solid $black;
+        margin: 0!important;
+        &__item {}
+        &__quote {
+            @extend %h_4;
+            line-height: 125%;
+            margin-bottom: _rem(80);
+            max-width: _rem(1100);
+            @media only screen and (min-width: 768px) {
+                margin-bottom: _rem(140);
+            }
+        }
+        &__author {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            &__image {
+                width: _rem(133);
+                height: _rem(133);
+                margin-right: auto;
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            &__text {
+                display: flex;
+                align-items: center;
+                margin-top: _rem(30);
+                @extend %p;
+                &__item {
+                    display: inline-block;
+                    margin-right: _rem(4);
+                    &:last-child {
+                        margin-right: 0;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    &:after {
+                        content: ',';
+                    }
+                }
+            }
+        }
+        .slick-dots {
+            top: 0;
+            display: flex;
+            gap: _rem(18);
+            width: 100%;
+            height: _rem(2);
+            li {
+                width: 100%;
+                height: _rem(2);
+                margin: 0;
+                button {
+                    width: 100%;
+                    height: _rem(2);
+                    background-color: $gray_lightest;
+                    padding: 0;
+                    &:before {
+                        display: none;
+                    }
+                }
+                &.slick-active {
+                    button {
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+

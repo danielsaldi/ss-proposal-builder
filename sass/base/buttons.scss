@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------
+# BUTTONS
+--------------------------------------------------------------*/
+
+%btn, .btn {
+    font-family: $matter;
+    font-weight: 400;
+    font-size: _rem(26);
+    line-height: 110%;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    text-decoration: none!important;
+    display: block;
+    span {
+        padding-right: _rem(40);
+    }
+    @media only screen and (min-width: 768px) {
+        font-size: _rem(38);
+    }
+    &:after {
+        content: "➝";
+        display: inline-block;
+        margin-left: _rem(-30);
+        transition: all 200ms ease-in-out;
+    }
+    &--sm {
+        font-size: _rem(22);
+        line-height: 130%;
+        @media only screen and (min-width: 768px) {
+            font-size: _rem(28);
+        }
+    }
+    &--lg {
+        font-family: $aktiv;
+        font-weight: 400;
+        font-size: _rem(28);
+        line-height: 115%;
+        letter-spacing: -0.03em;
+        margin: 0;
+        span {
+            padding-right: _rem(50);
+        }
+        @media only screen and (min-width: 768px) {
+            font-size: _rem(64);
+        }
+    }
+    &.no-arrow {
+        span {
+            padding-right: 0;
+        }
+        &:after {
+            display: none!important;
+        }
+    }
+    &.reverse-arrow {
+        &:before {
+            content: "➝";
+            transform: rotate(180deg);
+            display: inline-block;
+            margin-right: 0.3em;
+            transition: all 200ms ease-in-out;
+        }
+        &:hover,
+        &:focus {
+            &:before {
+                transform: translateX(-6px) rotate(180deg);
+            }
+        }
+        &:after {
+            display: none!important;
+        }
+    }
+    &:hover,
+    &:focus {
+        &:after {
+            transform: translateX(6px);
+        }
+    }
+}
+.no-link {
+    pointer-events: none;
+}
+
+%btn-solid, .btn-solid {
+    font-family: $matter;
+    font-weight: 400;
+    transition: all 200ms ease-in-out;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: $black;
+    color: $yellow;
+    border: none;
+    padding: _rem(18) _rem(36);
+    text-decoration: none!important;
+    font-size: _rem(22);
+    line-height: 130%;
+    @media only screen and (min-width: 768px) {
+        font-size: _rem(28);
+    }
+    &:hover,
+    &:focus {
+        background-color: $gray;
+    }
+}
+

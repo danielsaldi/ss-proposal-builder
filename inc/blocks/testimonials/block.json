@@ -1,0 +1,14 @@
+{
+  "name": "acf/testimonials",
+  "title": "Testimonials",
+  "description": "A custom block with testimonial slider.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["testimonial", "slider"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/testimonials/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}

@@ -1,0 +1,28 @@
+.our-team {
+   color: $white;
+   padding: _rem(160) 0 _rem(90);
+   &__image {
+    max-width: _rem(450);
+    margin-bottom: _rem(40);
+   }
+   &__bio {
+        .h_2 {
+            margin-bottom: _rem(8);
+        }
+        .h_3 {
+            margin-bottom: _rem(40);
+        }
+        @extend %p;
+        ul {
+            margin: _rem(30) 0 _rem(30) _rem(30);
+            li {
+                list-style-type: disc;
+                @extend %p;
+                line-height: 120%;
+            }
+        }
+        a {
+            text-decoration: underline;
+        } 
+    }
+}

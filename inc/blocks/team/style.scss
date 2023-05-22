@@ -1,0 +1,114 @@
+.team {
+    color: $white;
+    padding: _rem(120) 0 _rem(60);
+    &__grid {
+        &__item {
+            margin-bottom: _rem(57);
+        }
+        &__image {
+            padding-top: 100%;
+            margin-bottom: _rem(16);
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &__name,
+        &__position {
+            @extend %p_sm;
+            margin-bottom: 0;
+        }
+    }
+    &__secondary {
+        margin-top: _rem(10);
+        border-top: $white _rem(1) solid;
+        padding-top: _rem(26);
+        &__item {
+            margin-bottom: _rem(37);
+        }
+        &__title {
+            @extend %h_3;
+            margin-bottom: _rem(50);
+        }
+        &__name,
+        &__position {
+            @extend %p_md;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.team-modal {
+    .modal__overlay {
+        background-color: rgba(0, 0, 0, .25);
+    }
+    .modal__dialog {
+        display: flex;
+        left: auto;
+        right: -100%;
+        transform: translateY(-50%);
+        height: 100%;
+        max-height: 100%;
+        width: 100%;
+        max-width: calc(100% - 114px);
+        transition: right 300ms ease-in-out;
+        @media only screen and (max-width: 767px) {
+            top: 0;
+            bottom: 0;
+            transform: none;
+            max-width: 100%;
+        }
+        &.dialog-is-active {
+            right: 0;
+        }
+    }
+    .modal__close {
+        top: _rem(20);
+        right: _rem(20);
+        height: _rem(20);
+        width: _rem(20);
+		&:before {
+            background-size: _rem(20);
+            height: _rem(20);
+            width: _rem(20);
+			background-image: url('./../assets/images/icon-close.svg');
+		}
+        @media only screen and (min-width: 768px) {
+            top: _rem(20);
+            right: _rem(20);
+            height: _rem(30);
+            width: _rem(30);
+            &:before {
+                background-size: _rem(30);
+                height: _rem(30);
+                width: _rem(30);
+            }
+        }
+    }
+    &__content {
+        margin: auto;
+        max-width: _rem(990);
+    }
+    &__image {
+        margin: _rem(30) 0;
+    }
+    &__name {
+        @extend %h_3;
+    }
+    &__position {
+        @extend %h_3;
+    }
+    &__about {
+        margin-top: _rem(20);
+        p {
+            @extend %p_sm;
+            @media only screen and (min-width: 768px) {
+                font-size: _rem(18);
+            }
+        }
+    }
+}

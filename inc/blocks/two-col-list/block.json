@@ -1,0 +1,14 @@
+{
+  "name": "acf/two-col-list",
+  "title": "Two Col List",
+  "description": "A custom block with repeated list in two columns.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["list", "columns"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/two-col-list/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}

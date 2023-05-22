@@ -1,0 +1,49 @@
+.wp-block {
+	max-width: 90%;
+	section {
+		background-color: #000;
+	}
+	/*--------------------------------------------------------------
+	# Normalize
+	--------------------------------------------------------------*/
+	@import "base/normalize";
+
+	/*--------------------------------------------------------------
+	# Base
+	--------------------------------------------------------------*/
+
+	@import "base/variables";
+	@import "base/mixins";
+	@import "base/fonts";
+	@import "base/typography";
+	@import "base/buttons";
+	@import "base/global";
+	@import "base/forms";
+	@import "base/grid";
+	@import "base/animations";
+	@import "base/modal";
+
+	/*--------------------------------------------------------------
+	# Components
+	--------------------------------------------------------------*/
+
+	@import "components/header";
+	@import "components/footer";
+	@import "components/posts";
+	@import "components/our-team";
+	@import "components/error-404";
+
+	/*--------------------------------------------------------------
+	# Blocks
+	--------------------------------------------------------------*/
+
+	@import "../inc/blocks/text-editor/style";
+	@import "../inc/blocks/main-banner/style";
+	@import "../inc/blocks/two-col-text/style";
+	@import "../inc/blocks/links-list/style";
+	@import "../inc/blocks/secondary-banner/style";
+	@import "../inc/blocks/animated-logos/style";
+	@import "../inc/blocks/divider/style";
+	@import "../inc/blocks/two-col-list/style";
+
+}

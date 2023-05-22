@@ -1,0 +1,274 @@
+{
+    "key": "group_5c89ee8639e94",
+    "title": "Partial - Module Settings",
+    "fields": [
+        {
+            "key": "field_5e1e7b3a95366",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 1
+        },
+        {
+            "key": "field_5ce5b43c33ee9",
+            "label": "Module Settings",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c89ef14ff24f",
+            "label": "Custom Padding Top",
+            "name": "custom_padding_top",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Overrides module top padding.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5c89ef2bff250",
+            "label": "Custom Padding Bottom",
+            "name": "custom_padding_bottom",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Overrides module bottom padding.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5c89efabff255",
+            "label": "Custom Margin Top",
+            "name": "custom_margin_top",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Overrides module top margin.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5c89ef73ff252",
+            "label": "Custom Margin Bottom",
+            "name": "custom_margin_bottom",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Overrides module bottom margin.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5c89eee0ff24e",
+            "label": "Custom Padding Top Mobile",
+            "name": "custom_padding_top_mobile",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Overrides module top padding on mobile devices.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5c89ef4bff251",
+            "label": "Custom Padding Bottom Mobile",
+            "name": "custom_padding_bottom_mobile",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Overrides module bottom padding on mobile devices.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5c89ef9aff254",
+            "label": "Custom Margin Top Mobile",
+            "name": "custom_margin_top_mobile",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Overrides module top margin on mobile devices.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5c89ef86ff253",
+            "label": "Custom Margin Bottom Mobile",
+            "name": "custom_margin_bottom_mobile",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Overrides module bottom margin on mobile devices.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5d8be094a4a5b",
+            "label": "Custom Block ID",
+            "name": "custom_block_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Adds a custom ID to a module. Used for page anchors.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_618c2ffb510bc",
+            "label": "Custom Background Color",
+            "name": "custom_background_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "Adds a custom background color to module.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 1,
+            "return_format": "string"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1682969987
+}

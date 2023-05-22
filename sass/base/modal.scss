@@ -1,0 +1,112 @@
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+
+.v-noscroll {
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999999999;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    opacity: 0;
+    transition: opacity .3s linear;
+
+    animation: fadeOutToNone;
+    animation-duration: 300ms;
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        background-color: rgba( $black, .5);
+        transition: opacity .3s linear;
+    }
+
+    &__dialog {
+        height: auto;
+    	box-sizing: border-box;
+        margin: 0 auto;
+        min-width: 600px;
+        width: calc(100% - 240px);
+        max-height: calc(100vh - 240px);
+        max-width: 1200px;
+        opacity: 0;
+        transition: .5s linear;
+        transition-property: opacity;
+		position: absolute;
+        overflow-x: hidden;
+		top: 50%;
+		left: 50%;
+	    transform: translate(-50%,-50%);
+	    background-color: $white;
+	    padding: 40px;
+
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+	    @media only screen and (max-width: 767px) {
+	    	min-width: 300px;
+	    	width: calc(100% - 32px);
+	    	max-height: calc(100vh - 152px);
+			top: 76px;
+			left: 0px;
+			right: 0px;
+			margin-bottom: 0px;
+			transform: none;
+		}
+    }
+
+    &__close {
+        position: absolute;
+		top: 30px;
+		right: 30px;
+        z-index: 1;
+		cursor: pointer;
+		height: 30px;
+		width: 30px;
+		transition: opacity 300ms ease;
+		&:before {
+			content: '';
+			display: block;
+			background-image: url('./../assets/images/icon-close-white.svg');
+			background-size: 30px;
+			height: 30px;
+			width: 30px;
+		}
+		&:hover, 
+		&:focus {
+			opacity: 0.75;
+		}
+    }
+
+    &.is-active {
+        display: block;
+        opacity: 1;
+        animation: fadeInFromNone;
+        animation-duration: 300ms;
+        .modal {
+            &__overlay {
+                opacity: 1;
+                transition: opacity .15s linear;
+            }
+            &__dialog {
+            	opacity: 1;
+            }
+        }
+    }
+}

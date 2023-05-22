@@ -1,0 +1,149 @@
+/*--------------------------------------------------------------
+# ANIMATIONS
+--------------------------------------------------------------*/
+
+@keyframes left-then-right-pan { 
+    0% {transform: translateX(0);} 
+    50% {transform: translateX(-200px);}
+    100% {transform: translateX(0);} 
+ }
+ 
+ .left-then-right-pan { 
+    animation-name: left-then-right-pan; 
+    animation-duration: 40000ms;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes right-then-left-pan { 
+    0% {transform: translateX(0);} 
+    50% {transform: translateX(200px);}
+    100% {transform: translateX(0);} 
+ }
+ 
+ .right-then-left-pan { 
+    animation-name: right-then-left-pan; 
+    animation-duration: 40000ms;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes fade-out {
+   from { opacity: 1 }
+     to { opacity: 0 }
+}
+
+#fader.fade-out {
+   opacity: 0;
+   animation-name: fade-out;
+}
+
+@keyframes fade-in {
+   from { opacity: 0 }
+     to { opacity: 1 }
+}
+
+#fader.fade-in {
+   opacity: 1;
+   animation-name: fade-in;
+}
+
+@keyframes slideInFromRight {
+	0% {
+		right: -100%;
+	}
+
+	1% {
+		right: -100%;
+	}
+
+	100% {
+		right: 0;
+	}
+}
+
+@keyframes slideOutToRight {
+	0% {
+		right: 0;
+	}
+
+	1% {
+		right: 0;
+	}
+
+	100% {
+		right: -100%;
+	}
+}
+
+@keyframes fadeInFromNone {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	1% {
+		display: block;
+		opacity: 0;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOutToNone {
+	0% {
+		display: block;
+		opacity: 1;
+	}
+
+	99% {
+		display: block;
+		opacity: 0;
+	}
+
+	100% {
+		display: none;
+		opacity: 0;
+	}
+}
+
+@keyframes fadeInFlexFromNone {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	1% {
+		display: flex;
+		opacity: 0;
+	}
+
+	100% {
+		display: flex;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOutFlexToNone {
+	0% {
+		display: flex;
+		opacity: 1;
+	}
+
+	99% {
+		display: flex;
+		opacity: 0;
+	}
+
+	100% {
+		display: none;
+		opacity: 0;
+	}
+}
+
+@keyframes arrow-bounce {
+   0%   { transform: translateY(0); }
+   50%  { transform: translateY(10px); }
+   100% { transform: translateY(0); }
+}

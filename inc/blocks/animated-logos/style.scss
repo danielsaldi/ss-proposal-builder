@@ -1,0 +1,13 @@
+.animated-logos {
+    overflow: hidden;
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: _rem(50);
+        min-width: 5000px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: _rem(30) 0;
+    }
+}
