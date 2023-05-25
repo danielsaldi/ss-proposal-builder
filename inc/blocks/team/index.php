@@ -17,9 +17,24 @@ if( !empty($block['align']) ) {
 }
 
 // Load values and assign defaults.
+$team_grid_layout = get_field('team_grid_layout');
 $team_grid = get_field('team_grid');
 $secondary_team_title = get_field('secondary_team_title');
 $secondary_team = get_field('secondary_team');
+
+switch ($team_grid_layout) {
+    case '3-up':
+        $team_cols = 'col-xs-12 col-sm-6 col-md-4';
+        break;
+
+    case '4-up':
+        $team_cols = 'col-xs-12 col-sm-6 col-md-4 col-lg-3';
+        break;
+    
+    default:
+        $team_cols = 'col-xs-12 col-sm-6 col-md-4';
+        break;
+}
 
 ?>
 <section id="<?php echo esc_attr($block_id); ?>" class="<?php echo esc_attr($className); ?>" <?php echo $text_color; ?>>
@@ -37,7 +52,7 @@ $secondary_team = get_field('secondary_team');
                         $about = get_field('about', $item);
                         $photo = studioscience_get_attachment( get_field('photo', $item) );
                         ?>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="<?php echo $team_cols; ?>">
                             <a href="#modal-<?php echo $id; ?>" class="js-modalTrigger">
                                 <div class="team__grid__item">
                                     <div class="team__grid__image">

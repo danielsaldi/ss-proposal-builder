@@ -3,6 +3,32 @@
     "title": "Block - Team",
     "fields": [
         {
+            "key": "field_646fcc6a830cb",
+            "label": "Team Grid Layout",
+            "name": "team_grid_layout",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "3-up": "3 Column",
+                "4-up": "4 Column"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_64517809065ea",
             "label": "Team Grid",
             "name": "team_grid",
@@ -121,5 +147,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683061416
+    "modified": 1685048513
 }

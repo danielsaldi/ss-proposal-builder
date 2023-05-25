@@ -18,6 +18,7 @@ if( !empty($block['align']) ) {
 
 // Load values and assign defaults.
 $timeline = get_field('timeline');
+$display_total_weeks = get_field('display_total_weeks');
 $timeline_count = count($timeline);
 
 $total_weeks = 0;
@@ -82,7 +83,9 @@ endforeach;
                     </div>
                 <?php endforeach; ?>
             </div>
-            <div class="timeline__weeks">Full project duration: <?php echo $total_weeks == 1 ? $total_weeks . ' week' : $total_weeks . ' weeks'; ?></div>
+            <?php if($display_total_weeks) : ?>
+                <div class="timeline__weeks">Full project duration: <?php echo $total_weeks == 1 ? $total_weeks . ' week' : $total_weeks . ' weeks'; ?></div>
+            <?php endif; ?>
         <?php endif; ?>
     </div>
 
