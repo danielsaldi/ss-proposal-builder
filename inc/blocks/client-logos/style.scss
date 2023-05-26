@@ -1,0 +1,13 @@
+.client-logos {
+    background-color: $white;
+    padding: _rem(50) 0 _rem(60);
+    @media only screen and (min-width: 768px) {
+        padding: _rem(50) 0 _rem(100);
+    }
+    &__row {
+        margin: 0 auto;
+    }
+    &__logo {
+        margin: 0 auto;
+    }
+}

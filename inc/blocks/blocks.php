@@ -38,12 +38,13 @@ function studioscience_allowed_block_types( $allowed_blocks ) {
         'acf/two-col-text',
         'acf/links-list',
         'acf/secondary-banner',
-        'acf/animated-logos',
         'acf/divider',
         'acf/two-col-list',
         'acf/team',
         'acf/testimonials',
-        'acf/timeline'
+        'acf/timeline',
+        'acf/client-logos',
+        'acf/payment-timeline'
     );
 }
 add_filter( 'allowed_block_types_all', 'studioscience_allowed_block_types' );
@@ -53,10 +54,11 @@ new registerAcfBlock('main-banner');
 new registerAcfBlock('two-col-text');
 new registerAcfBlock('links-list');
 new registerAcfBlock('secondary-banner');
-new registerAcfBlock('animated-logos');
 new registerAcfBlock('divider');
 new registerAcfBlock('two-col-list');
 new registerAcfBlock('team');
 new registerAcfBlock('testimonials');
 new registerAcfBlock('timeline');
+new registerAcfBlock('client-logos');
+new registerAcfBlock('payment-timeline');
 

@@ -1,18 +1,67 @@
 {
-    "key": "group_6425f9fdb4f33",
-    "title": "Block - Animated Logos",
+    "key": "group_6470cbd9d4565",
+    "title": "Block - Client Logos",
     "fields": [
         {
-            "key": "field_645165996a3ac",
-            "label": "Client Row 1",
-            "name": "client_row_1",
+            "key": "field_6470cdb0d1f92",
+            "label": "Column Options",
+            "name": "column_options",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "3-up": "3 Columns",
+                "4-up": "4 Columns",
+                "5-up": "5 Columns"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6470cf1fd1f93",
+            "label": "Container Max Width",
+            "name": "container_max_width",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": "px"
+        },
+        {
+            "key": "field_6470cbd9e2d80",
+            "label": "Clients",
+            "name": "clients",
             "aria-label": "",
             "type": "relationship",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "100",
                 "class": "",
                 "id": ""
             },
@@ -32,36 +81,7 @@
             "elements": ""
         },
         {
-            "key": "field_64516e60d431e",
-            "label": "Client Row 2",
-            "name": "client_row_2",
-            "aria-label": "",
-            "type": "relationship",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "client"
-            ],
-            "post_status": [
-                "publish"
-            ],
-            "taxonomy": "",
-            "filters": [
-                "taxonomy"
-            ],
-            "return_format": "id",
-            "min": "",
-            "max": "",
-            "elements": ""
-        },
-        {
-            "key": "field_6425f9fdbe49c",
+            "key": "field_6470cbd9e2e1c",
             "label": "Module Settings",
             "name": "module_settings",
             "aria-label": "",
@@ -88,7 +108,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/animated-logos"
+                "value": "acf\/client-logos"
             }
         ]
     ],
@@ -101,5 +121,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683058279
+    "modified": 1685114966
 }

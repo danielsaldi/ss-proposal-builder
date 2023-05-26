@@ -1,0 +1,75 @@
+.payment-timeline {
+    color: $white;
+    padding: _rem(50) 0 _rem(60);
+    @media only screen and (min-width: 768px) {
+        padding: _rem(50) 0 _rem(100);
+    }
+    &__timeline {
+        width: 100%;
+        max-width: _rem(300);
+        margin: 0 auto;
+        &:before {
+            content: '';
+            position: absolute;
+            left: _rem(9);
+            height: 100%;
+            width: _rem(2);
+            background-color: $white;
+        }
+        @media only screen and (min-width: 768px) {
+            display: flex;
+            max-width: 100%;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                height: _rem(2);
+            }
+        }
+    }
+    &__item {
+        text-align: center;
+        flex: 1;
+        padding: _rem(30) 0 _rem(30) _rem(30);
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            background-color: $white;
+            height: _rem(20);
+            width: _rem(20);
+            left: 0;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            top: calc(50% - 10px);
+        }
+        @media only screen and (min-width: 768px) {
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                background-color: $white;
+                height: _rem(20);
+                width: _rem(20);
+                transform: translate(-50%);
+                top: calc(50% - 10px);
+                left: 50%;
+                border-radius: 50%;
+                margin: 0 auto;
+            }
+        }
+        &__amount {
+            @extend %p_lg;
+            margin-bottom: _rem(10);
+            @media only screen and (min-width: 768px) {
+                margin-bottom: _rem(80);
+            }
+        }
+        &__detail {
+            @extend %h_3;
+        }
+    }
+}

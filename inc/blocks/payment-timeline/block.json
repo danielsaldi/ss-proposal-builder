@@ -1,0 +1,14 @@
+{
+  "name": "acf/payment-timeline",
+  "title": "Payment Timeline",
+  "description": "A custom block with payment timeline.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["payments", "timeline"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/payment-timeline/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}

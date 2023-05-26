@@ -1,0 +1,14 @@
+{
+  "name": "acf/client-logos",
+  "title": "Client Logos",
+  "description": "A custom block with one or two rows of client logos.",
+  "category": "studio-science-blocks",
+  "icon": "admin-comments",
+  "keywords": ["logos", "clients"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "/inc/blocks/client-logos/index.php",
+      "blockVersion": 2
+  },
+  "align": "full"
+}
