@@ -26,7 +26,7 @@ $testimonials = get_field('testimonials');
 
     <div class="container">
         <?php if($testimonials) : ?>
-            <div class="testimonials__slider">
+            <div class="testimonials__slider sr-scale">
                
                 <?php foreach($testimonials as $t) : 
                     $company = get_field('company', $t);
@@ -38,13 +38,13 @@ $testimonials = get_field('testimonials');
 
                     <div class="testimonials__slider__item">
                         <?php if($quote) : ?>
-                            <div class="testimonials__slider__quote sr-scale">
+                            <div class="testimonials__slider__quote">
                                 <?php echo $quote; ?>
                             </div>
                         <?php endif; ?>
                         <div class="testimonials__slider__author">
                             
-                            <div class="testimonials__slider__author__image sr-reveal">
+                            <div class="testimonials__slider__author__image">
                                 <?php if($image['src']) : ?>
                                     <img src="<?php echo $image['src']; ?>" srcset="<?php echo $image['srcset']; ?>" alt="<?php echo $image['alt']; ?>">
                                 <?php endif; ?>
