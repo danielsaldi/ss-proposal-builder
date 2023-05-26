@@ -8,6 +8,7 @@
         margin: 0 auto;
     }
     &__logo {
-        margin: 0 auto;
+        margin: _rem(30) auto;
+        max-width: 200px;
     }
 }

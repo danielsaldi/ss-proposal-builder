@@ -4657,7 +4657,8 @@
   margin: 0 auto;
 }
 .wp-block .client-logos__logo {
-  margin: 0 auto;
+  margin: 1.875rem auto;
+  max-width: 200px;
 }
 .wp-block .payment-timeline {
   color: #ffffff;
