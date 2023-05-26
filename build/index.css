@@ -3902,7 +3902,12 @@
   background: #DFFF00;
 }
 .wp-block .footer__main {
-  padding: 7.5rem 0 26.875rem;
+  padding: 5.625rem 0 12.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .wp-block .footer__main {
+    padding: 7.5rem 0 26.875rem;
+  }
 }
 .wp-block .footer__legal {
   border-top: #000000 0.0625rem solid;
@@ -4271,7 +4276,12 @@
 .wp-block .secondary-banner {
   width: 100%;
   color: #DFFF00;
-  padding: 8.75rem 0 4.375rem;
+  padding: 4.375rem 0 0;
+}
+@media only screen and (min-width: 768px) {
+  .wp-block .secondary-banner {
+    padding: 8.75rem 0 4.375rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   .wp-block .secondary-banner .container {
@@ -4710,6 +4720,9 @@
   top: calc(50% - 10px);
 }
 @media only screen and (min-width: 768px) {
+  .wp-block .payment-timeline__item {
+    padding: 1.875rem 0;
+  }
   .wp-block .payment-timeline__item:before {
     content: "";
     position: absolute;

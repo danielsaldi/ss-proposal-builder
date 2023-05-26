@@ -4325,7 +4325,12 @@ img {
   background: #DFFF00;
 }
 .footer__main {
-  padding: 7.5rem 0 26.875rem;
+  padding: 5.625rem 0 12.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .footer__main {
+    padding: 7.5rem 0 26.875rem;
+  }
 }
 .footer__legal {
   border-top: #000000 0.0625rem solid;
@@ -4707,7 +4712,12 @@ img {
 .secondary-banner {
   width: 100%;
   color: #DFFF00;
-  padding: 8.75rem 0 4.375rem;
+  padding: 4.375rem 0 0;
+}
+@media only screen and (min-width: 768px) {
+  .secondary-banner {
+    padding: 8.75rem 0 4.375rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   .secondary-banner .container {
@@ -5154,6 +5164,9 @@ img {
   top: calc(50% - 10px);
 }
 @media only screen and (min-width: 768px) {
+  .payment-timeline__item {
+    padding: 1.875rem 0;
+  }
   .payment-timeline__item:before {
     content: "";
     position: absolute;

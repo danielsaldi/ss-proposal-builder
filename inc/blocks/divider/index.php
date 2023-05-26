@@ -26,7 +26,7 @@ $text_color = get_field('text_color') ? 'style="color: ' . get_field('text_color
 
     <?php get_template_part( 'inc/partials/module_settings', '', array('block_id' => $block_id ) ); ?>
 
-    <div class="container">
+    <div class="container sr-reveal">
         <div class="divider__line" <?php echo $line_color; ?>></div>
         <?php if($divider_text) : ?>
             <div class="divider__text" <?php echo $text_color; ?>><?php echo $divider_text; ?></div>

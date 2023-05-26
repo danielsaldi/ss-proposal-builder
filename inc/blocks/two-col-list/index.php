@@ -35,7 +35,7 @@ $list = get_field('list');
                 $content = $l['content'];
                 $cta = $l['cta'];
                 ?>
-                <div class="two-col-list__item sr-sequence">
+                <div class="two-col-list__item sr-scale">
                     <div class="row">
                         <div class="col-xs-12 col-md-4">
                             <?php get_template_part( 'inc/partials/heading', '', array('heading' => $heading ) ); ?>

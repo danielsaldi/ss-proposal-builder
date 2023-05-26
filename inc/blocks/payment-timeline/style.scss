@@ -47,6 +47,7 @@
             top: calc(50% - 10px);
         }
         @media only screen and (min-width: 768px) {
+            padding: _rem(30) 0;
             &:before {
                 content: '';
                 position: absolute;

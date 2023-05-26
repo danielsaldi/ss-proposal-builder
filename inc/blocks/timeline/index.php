@@ -57,7 +57,7 @@ endforeach;
 
                             <div class="col-xs-12 col-md-8 col-lg-9">
                                 <?php if($description) : ?>
-                                    <div class="timeline__slider__description">
+                                    <div class="timeline__slider__description sr-scale">
                                         <?php echo $description; ?>
                                     </div>
                                 <?php endif; ?>
@@ -68,7 +68,7 @@ endforeach;
                 <?php endforeach; ?>
                 
             </div>
-            <div class="timeline__navigation">
+            <div class="timeline__navigation sr-scale">
                 <?php foreach($timeline as $t) : 
                     $weeks = $t['weeks'];
                     $timeline_width = $weeks / $total_weeks;

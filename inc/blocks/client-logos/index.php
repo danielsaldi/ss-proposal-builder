@@ -54,7 +54,7 @@ switch ($column_options) {
                     $logo_max_width = get_field('logo_max_width', $client_id) ? 'style="max-width: ' . get_field('logo_max_width', $client_id) . 'px;"' : '';
                     ?>
                     <div class="<?php echo $logo_cols; ?>">
-                        <div class="client-logos__logo" <?php echo $logo_max_width; ?>>
+                        <div class="client-logos__logo sr-sequence-scale" <?php echo $logo_max_width; ?>>
                             <img src="<?php echo $logo['src']; ?>" alt="<?php echo $logo['alt']; ?>">
                         </div>
                     </div>

@@ -38,22 +38,31 @@ var modal = new _modules_Modal__WEBPACK_IMPORTED_MODULE_7__["default"]();
 // Global Animation Classes //
 (0,scrollreveal__WEBPACK_IMPORTED_MODULE_0__["default"])().reveal('.sr-reveal', {
   origin: 'bottom',
-  distance: '20px',
-  viewFactor: 0.25,
+  distance: '-10px',
   duration: 600,
-  easing: 'ease-in-out'
+  easing: 'ease-in-out',
+  reset: 'true'
+});
+(0,scrollreveal__WEBPACK_IMPORTED_MODULE_0__["default"])().reveal('.sr-scale', {
+  origin: 'bottom',
+  distance: '-10px',
+  duration: 600,
+  easing: 'ease-in-out',
+  reset: 'true',
+  scale: 0.9
 });
 (0,scrollreveal__WEBPACK_IMPORTED_MODULE_0__["default"])().reveal('.sr-sequence', {
   duration: 800,
-  interval: 500,
-  easing: 'ease-in-out'
+  interval: 400,
+  easing: 'ease-in-out',
+  reset: 'true'
 });
-(0,scrollreveal__WEBPACK_IMPORTED_MODULE_0__["default"])().reveal('.line-chart__line__width', {
-  viewFactor: 1,
-  interval: 100,
-  beforeReveal: function beforeReveal(el) {
-    el.classList.remove('no-fill');
-  }
+(0,scrollreveal__WEBPACK_IMPORTED_MODULE_0__["default"])().reveal('.sr-sequence-scale', {
+  duration: 800,
+  interval: 500,
+  easing: 'ease-in-out',
+  reset: 'true',
+  scale: 0.9
 });
 
 // Slick Slider //

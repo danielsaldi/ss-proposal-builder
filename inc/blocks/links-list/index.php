@@ -34,7 +34,7 @@ $links = get_field('links');
                     $button_classes .= $l['no_link'] ? ' no-link' : '';
                     $text = $l['text'];
                     ?>
-                    <div class="links-list__list__item sr-reveal">
+                    <div class="links-list__list__item sr-scale">
                         <div class="links-list__list__item__link">
                             <?php get_template_part( 'inc/partials/link', '', array('link' => $link, 'classes' => $button_classes ) ); ?>
                         </div>

@@ -30,7 +30,7 @@ $content_max_width = get_field('content_max_width') ? 'style="max-width: ' . get
     <?php get_template_part( 'inc/partials/module_settings', '', array('block_id' => $block_id ) ); ?>
 
     <div class="container">
-        <div class="text-editor__content" <?php echo $content_max_width; ?>>
+        <div class="text-editor__content sr-reveal" <?php echo $content_max_width; ?>>
             <?php if($heading['heading_text']) : ?>
                 <div class="text-editor__heading" <?php echo $title_color; ?>>
                     <?php get_template_part( 'inc/partials/heading', '', array('heading' => $heading ) ); ?>

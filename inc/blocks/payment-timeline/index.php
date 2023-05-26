@@ -31,7 +31,7 @@ $payment_timeline = get_field('payment_timeline');
                     $amount = $pt['amount'];
                     $detail = $pt['detail'];    
                 ?>
-                    <div class="payment-timeline__item">
+                    <div class="payment-timeline__item sr-sequence-scale">
                         <div class="payment-timeline__item__amount"><?php echo $amount; ?></div>
                         <div class="payment-timeline__item__detail"><?php echo $detail; ?></div>
                     </div>

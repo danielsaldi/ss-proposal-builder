@@ -1,7 +1,10 @@
 .secondary-banner {
     width: 100%;
     color: $yellow;
-    padding: _rem(140) 0 _rem(70);
+    padding: _rem(70) 0 0;
+    @media only screen and (min-width: 768px) {
+        padding: _rem(140) 0 _rem(70);
+    }
     .container {
         @media only screen and (min-width: 768px) {
             display: flex;

@@ -15,9 +15,10 @@ const smoothScroll = new SmoothScroll()
 const modal = new Modal()
 
 // Global Animation Classes //
-ScrollReveal().reveal('.sr-reveal', { origin: 'bottom', distance: '20px', viewFactor: 0.25, duration: 600, easing: 'ease-in-out' });
-ScrollReveal().reveal('.sr-sequence', { duration: 800, interval: 500, easing: 'ease-in-out' });
-ScrollReveal().reveal('.line-chart__line__width', { viewFactor: 1, interval: 100, beforeReveal: function (el) { el.classList.remove('no-fill'); } });
+ScrollReveal().reveal('.sr-reveal', { origin: 'bottom', distance: '-10px', duration: 600, easing: 'ease-in-out', reset: 'true' });
+ScrollReveal().reveal('.sr-scale', { origin: 'bottom', distance: '-10px', duration: 600, easing: 'ease-in-out', reset: 'true', scale: 0.9 } );
+ScrollReveal().reveal('.sr-sequence', { duration: 800, interval: 400, easing: 'ease-in-out', reset: 'true' } );
+ScrollReveal().reveal('.sr-sequence-scale', { duration: 800, interval: 500, easing: 'ease-in-out', reset: 'true', scale: 0.9 } );
 
 // Slick Slider //
 var testimonialSlider = $('.testimonials__slider');

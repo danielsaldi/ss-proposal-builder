@@ -54,7 +54,7 @@ switch ($team_grid_layout) {
                         ?>
                         <div class="<?php echo $team_cols; ?>">
                             <a href="#modal-<?php echo $id; ?>" class="js-modalTrigger">
-                                <div class="team__grid__item">
+                                <div class="team__grid__item sr-sequence-scale">
                                     <div class="team__grid__image">
                                         <?php if($photo) : ?>
                                             <img src="<?php echo $photo['src']; ?>" srcset="<?php echo $photo['srcset']; ?>" alt="<?php echo $photo['alt']; ?>">
@@ -133,7 +133,7 @@ switch ($team_grid_layout) {
 
                                 <div class="col-xs-12 col-sm-6 col-md-6">
                                     <a href="#modal-<?php echo $id; ?>" class="js-modalTrigger">
-                                        <div class="team__secondary__item">
+                                        <div class="team__secondary__item sr-sequence">
                                             <div class="team__secondary__name">
                                                 <?php echo $name; ?>
                                             </div>
