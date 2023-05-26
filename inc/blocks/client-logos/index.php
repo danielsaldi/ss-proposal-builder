@@ -47,7 +47,7 @@ switch ($column_options) {
     <?php if(isset($clients)) : ?>
 
         <div class="client-logos__row" <?php echo $container_max_width; ?>>
-            <div class="row center-md">
+            <div class="row center-md middle-md">
                 <?php foreach($clients as $client) : 
                     $client_id = $client;
                     $logo = studioscience_get_attachment(get_field('logo', $client_id));
