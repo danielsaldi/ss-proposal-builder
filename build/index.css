@@ -525,7 +525,7 @@
 .wp-block .gform_wrapper.gravity-theme form select:last-of-type, .wp-block .p_md:last-of-type {
   margin-bottom: 0;
 }
-.wp-block .payment-timeline__item__amount, .wp-block .timeline__slider__description, .wp-block .error-404__content h3, .wp-block .p_lg {
+.wp-block .payment-timeline__item__amount, .wp-block .timeline__slider__description, .wp-block .error-404__content h3, .wp-block .footer__main__share .addtoany_shortcode .a2a_button_copy_link:before, .wp-block .footer__main__share, .wp-block .p_lg {
   font-family: "Matter", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -533,11 +533,11 @@
   margin: 0 0 2.5rem 0;
 }
 @media only screen and (min-width: 768px) {
-  .wp-block .payment-timeline__item__amount, .wp-block .timeline__slider__description, .wp-block .error-404__content h3, .wp-block .p_lg {
+  .wp-block .payment-timeline__item__amount, .wp-block .timeline__slider__description, .wp-block .error-404__content h3, .wp-block .footer__main__share .addtoany_shortcode .a2a_button_copy_link:before, .wp-block .footer__main__share, .wp-block .p_lg {
     font-size: 2.25rem;
   }
 }
-.wp-block .payment-timeline__item__amount:last-of-type, .wp-block .timeline__slider__description:last-of-type, .wp-block .error-404__content h3:last-of-type, .wp-block .p_lg:last-of-type {
+.wp-block .payment-timeline__item__amount:last-of-type, .wp-block .timeline__slider__description:last-of-type, .wp-block .error-404__content h3:last-of-type, .wp-block .footer__main__share .addtoany_shortcode .a2a_button_copy_link:last-of-type:before, .wp-block .footer__main__share:last-of-type, .wp-block .p_lg:last-of-type {
   margin-bottom: 0;
 }
 .wp-block .footer__legal__link, .wp-block .footer__main__link a, .wp-block .header__links a, .wp-block .btn {
@@ -3909,6 +3909,46 @@
     padding: 7.5rem 0 26.875rem;
   }
 }
+.wp-block .footer__main__link {
+  margin-bottom: 1.875rem;
+}
+.wp-block .footer__main__share .addtoany_shortcode {
+  display: inline-block;
+}
+.wp-block .footer__main__share .addtoany_shortcode .a2a_button_copy_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wp-block .footer__main__share .addtoany_shortcode .a2a_button_copy_link:before,
+.wp-block .footer__main__share .addtoany_shortcode .a2a_button_copy_link span {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.wp-block .footer__main__share .addtoany_shortcode .a2a_button_copy_link:before {
+  content: "Share Proposal";
+  margin-right: 0.625rem;
+}
+.wp-block .footer__main__share .addtoany_shortcode .a2a_button_copy_link span {
+  width: 2rem !important;
+  line-height: 2rem !important;
+  height: 2rem !important;
+  background-size: 2rem !important;
+}
+@media only screen and (min-width: 768px) {
+  .wp-block .footer__main__share .addtoany_shortcode .a2a_button_copy_link span {
+    width: 3.125rem !important;
+    line-height: 3.125rem !important;
+    height: 3.125rem !important;
+    background-size: 3.125rem !important;
+  }
+}
+.wp-block .footer__main__share .addtoany_shortcode .a2a_button_copy_link:hover:before {
+  opacity: 0.75;
+}
 .wp-block .footer__legal {
   border-top: #000000 0.0625rem solid;
   display: -webkit-box;
@@ -3939,6 +3979,10 @@
 }
 .wp-block .footer__legal__link {
   white-space: nowrap;
+}
+.wp-block #a2a_copy_link_copied {
+  background-color: #DFFF00 !important;
+  color: #000000 !important;
 }
 .wp-block .single-post .text-editor {
   padding-top: 0;

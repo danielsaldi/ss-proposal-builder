@@ -222,3 +222,12 @@ function studioscience_disable_block_for_post_type( $bool, $post ) {
 add_filter( 'use_block_editor_for_post', 'studioscience_disable_block_for_post_type', 10, 2 );
 
 
+function studioscience_check_home() {
+    if(is_home() || is_front_page()) {
+        global $wp_query;
+        $wp_query->set_404();
+        status_header( 404 );
+        get_template_part( 404 ); exit();
+    }
+}
+add_action('wp', 'studioscience_check_home');

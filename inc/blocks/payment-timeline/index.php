@@ -20,7 +20,7 @@ if( !empty($block['align']) ) {
 $payment_timeline = get_field('payment_timeline');
 
 ?>
-<section id="<?php echo esc_attr($block_id); ?>" class="<?php echo esc_attr($className); ?>" <?php echo $text_color; ?>>
+<section id="<?php echo esc_attr($block_id); ?>" class="<?php echo esc_attr($className); ?>">
 
     <?php get_template_part( 'inc/partials/module_settings', '', array('block_id' => $block_id ) ); ?>
 

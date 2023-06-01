@@ -17,6 +17,7 @@
     <div class="container">
         <div class="footer__main">
             <div class="footer__main__link"><a href="<?php echo $proposal_file; ?>" download><span>Review the full proposal</span></a></div>
+            <div class="footer__main__share"><?php echo do_shortcode('[addtoany]'); ?></div>
         </div>
         <div class="footer__legal">
             <div class="footer__legal__text">© <?php echo date("Y");?> Studio Science</div>
